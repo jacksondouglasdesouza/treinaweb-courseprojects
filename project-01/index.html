@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../favicon/favicon.png"
+            type="image/x-icon"
+        />
+        <meta name="description" content="Course Project - Simple Form." />
+        <meta name="author" content="Jackson Douglas de Souza" />
+        <link rel="stylesheet" href="../css/project-01.css" />
+        <title>Project 01 - Forms</title>
+    </head>
+    <body>
+        <main>
+            <a class="back" href="../index.html">Back</a>
+            <form action="#" class="form-user">
+                <p>Course Project - Simple Form.</p>
+                <section class="nameEmail">
+                    <label for="nome"
+                        ><img
+                            class="icon"
+                            src="https://user-images.githubusercontent.com/76602433/208009091-c087c9cc-aab5-4dd8-82a8-ca2e2d441985.svg"
+                            width="30px"
+                            height="30px"
+                            alt="Icon User"
+                    /></label>
+                    <input
+                        type="text"
+                        name="nome"
+                        id="nome"
+                        placeholder="Enter your name..."
+                    />
+                </section>
+                <section class="nameEmail">
+                    <label for="email"
+                        ><img
+                            class="icon"
+                            src="https://user-images.githubusercontent.com/76602433/208009081-4e176f2e-5e4f-4506-9f78-7762391cb7e5.svg"
+                            width="30px"
+                            height="30px"
+                            alt="Icon email"
+                    /></label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email address..."
+                        required
+                    />
+                </section>
+                <section class="nameEmail">
+                    <textarea
+                        name="comentario"
+                        id="comentario"
+                        cols="30"
+                        rows="15"
+                        placeholder="Enter your comentario..."
+                    ></textarea>
+                </section>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>

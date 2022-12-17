@@ -1,0 +1,299 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+ /* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,500;1,600&family=Roboto:wght@300;400;500;700&display=swap');
+
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.98rem;
+  font-weight: regular;
+}
+
+body{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+main{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+header{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 50px;
+  margin: 30px auto;
+  gap: 20px;
+}
+
+.back{
+  background-color: #27122d;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 3px;
+}
+
+.back:hover{
+  background-color: #1b0524;
+cursor: pointer;
+transition: 0.3s;
+}
+
+
+.company-logo{
+  margin: 30px auto;
+}
+
+h1{
+  font-family:'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: medium;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.italic{
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #1877f2;
+}
+
+
+body{
+  background-color: #fcfcfc;
+  color: #27122d;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#formLogin{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: solid 1px #b6b6b6be;
+  padding: 20px 30px;
+  width: 400px;
+}
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-field input{
+  width: 390px;
+  height: 45px;
+  background-color: #fcfcfc;
+  border: solid 1px #b6b6b6be;
+  border-radius: 3px;
+  padding: 5px;
+  color: #111;
+}
+
+.form-field input:focus{
+  outline: none;
+}
+
+.forgotPassword{
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgotPassword a{
+  text-decoration: none;
+}
+
+.form-content button{
+  width: 100%;
+  padding: 21px;
+  background-color: #27122d;
+  color: #fff;
+  border-radius: 3px;
+  border: solid 1px #27122d;
+
+}
+
+.form-content button:hover{
+  background-color: #1b0524;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/*  HR ROW */
+.hrRows{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.hrRows hr{
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/*  END HR ROW */
+
+
+/* API LOGIN */
+
+.google-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  text-align: left;
+}
+
+.facebook{
+  margin-top: 0;
+  background-color: #166EF5;
+  color: #fff;
+  gap: 1px;
+}
+
+.facebook:hover{
+  background-color: #1064d3;
+  transition: 0.6s;
+}
+
+.google{
+  background-color: #34a853;
+  color: #fff;
+  margin-bottom: 0;
+  gap: 3px;
+}
+
+.google:hover{
+background-color: #207938;
+transition: 0.6s;
+}
+
+/* END API LOGIN */
+
+
+.create-account{
+  font-size: small;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+/* FOOTER */
+
+
+footer{
+  width: 100%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: unset;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  background-color: #27122d;
+  margin: 20px auto;
+  color: #ffffff;
+}
+
+footer p{
+  color: #ffffff;
+  font-size: small;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+
+footer a{
+  color: #ffffff;
+  font-size: smaller;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* END FOOTER */
