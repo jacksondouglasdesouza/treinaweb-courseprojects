@@ -1,91 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="../favicon/favicon.png"
+            type="image/x-icon"
+        />
+        <meta name="description" content="Course Project - Login Form." />
+        <meta name="author" content="Jackson Douglas de Souza" />
+        <!--My linkedin https://www.linkedin.com/in/jacksondouglasdesouza -->
+        <link rel="stylesheet" href="../css/project-02.css" />
+        <title>Project 02 - Login Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Course Project - Login Form</h1>
+            <a class="back" class="back" href="../index.html">Back</a><br />
+        </header>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon" />
-    <meta name="description" content="Course Project - Login Form." />
-    <meta name="author" content="Jackson Douglas de Souza" />
-    <!--My linkedin https://www.linkedin.com/in/jacksondouglasdesouza -->
-    <link rel="stylesheet" href="../css/project-02.css" />
-    <title>Project 02 - Login Form</title>
-</head>
+        <main class="form-container">
+            <!--DIV FORM-->
+            <div class="form-content">
+                <div>
+                    <img
+                        class="company-logo"
+                        src="../resourse/imgs/project-02/header/logo/mycoinLogo.svg"
+                        alt="company logo"
+                        width="auto"
+                        height="auto"
+                    />
+                </div>
+                <!--FORM-->
+                <form action="#" method="POST" id="formLogin">
+                    <h2>Login</h2>
+                    <!--FORM LOGIN-->
+                    <section class="form-field">
+                        <label for="login">Email address</label>
+                        <input
+                            class="login"
+                            name="login"
+                            type="text"
+                            placeholder="Enter your information..."
+                            required
+                        />
+                    </section>
+                    <!--END LOGIN-->
 
-<body>
-    <header>
-        <h1>Course Project - Login Form</h1>
-        <a class="back" class="back" href="../index.html">Back</a><br />
-    </header>
+                    <!--FORM PASSWORD-->
+                    <section class="form-field">
+                        <div class="forgotPassword">
+                            <label for="password">Password</label>
+                            <a class="italic italic02" href="#"
+                                >Forgot password?</a
+                            >
+                        </div>
+                        <input
+                            class="password"
+                            name="password"
+                            type="password"
+                            placeholder="Enter your information..."
+                            required
+                        />
+                    </section>
+                    <!--END PASSWORD-->
 
-    <main class="form-container">
-        <!--DIV FORM-->
-        <div class="form-content">
-            <div>
-                <img class="company-logo"
-                    src="https://user-images.githubusercontent.com/76602433/208233349-8700df02-1d68-4db8-9727-2c08ea367263.svg"
-                    alt="company logo" width="auto" height="auto" />
+                    <!--LOGIN BUTTON-->
+                    <button class="loginButton" type="submit">
+                        Sign in to account
+                    </button>
+                    <!--END BUTTON-->
+
+                    <!--ROWS AND HRS-->
+                    <section class="hrRows">
+                        <hr />
+                        <span>or</span>
+                        <hr />
+                    </section>
+                    <!--END ROWS AND HRS-->
+
+                    <!--GOOGLE API BUTTON-->
+                    <a href="#" class="google-login google"
+                        ><img
+                            width="20"
+                            height="20"
+                            class="goo"
+                            src="../resourse/imgs/project-02/body/google.svg"
+                            alt="Google Icon"
+                        />Login with Google</a
+                    >
+                    <a href="#" class="google-login facebook"
+                        ><img
+                            width="20"
+                            height="20"
+                            class="face"
+                            src="../resourse/imgs/project-02/body/facebook.svg"
+                            alt="Google Icon"
+                        />Login with Facebook</a
+                    >
+                </form>
+                <!--END FORM-->
+
+                <p class="create-account">
+                    New to Mycoin?
+                    <a class="italic" href="">Create an account</a>
+                </p>
             </div>
-            <!--FORM-->
-            <form action="#" method="POST" id="formLogin">
-                <h2>Login</h2>
-                <!--FORM LOGIN-->
-                <section class="form-field">
-                    <label for="login">Email address</label>
-                    <input class="login" name="login" type="text" placeholder="Enter your information..." required />
-                </section>
-                <!--END LOGIN-->
+            <!--END DIV FORM-->
+        </main>
 
-                <!--FORM PASSWORD-->
-                <section class="form-field">
-                    <div class="forgotPassword">
-                        <label for="password">Password</label>
-                        <a class="italic italic02" href="#">Forgot password?</a>
-                    </div>
-                    <input class="password" name="password" type="password" placeholder="Enter your information..."
-                        required />
-                </section>
-                <!--END PASSWORD-->
-
-                <!--LOGIN BUTTON-->
-                <button class="loginButton" type="submit">
-                    Sign in to account
-                </button>
-                <!--END BUTTON-->
-
-                <!--ROWS AND HRS-->
-                <section class="hrRows">
-                    <hr />
-                    <span>or</span>
-                    <hr />
-                </section>
-                <!--END ROWS AND HRS-->
-
-                <!--GOOGLE API BUTTON-->
-                <a href="#" class="google-login google"><img width="20" height="20" class="goo"
-                        src="https://user-images.githubusercontent.com/76602433/208233385-b274ff3b-c432-48b2-bd98-946364fcef84.svg"
-                        alt="Google Icon" />Login with Google</a>
-                <a href="#" class="google-login facebook"><img width="20" height="20" class="face"
-                        src="https://user-images.githubusercontent.com/76602433/208233411-ab1868ad-5597-4306-9e94-501c6b60249d.svg"
-                        alt="Google Icon" />Login with Facebook</a>
-            </form>
-            <!--END FORM-->
-
-            <p class="create-account">
-                New to Mycoin?
-                <a class="italic" href="">Create an account</a>
-            </p>
-        </div>
-        <!--END DIV FORM-->
-    </main>
-
-    <!--FOOTER-->
-    <footer>
-        <p>Developed by the Student</p>
-        <a class="foo" href="https://www.linkedin.com/in/jacksondouglasdesouza/" target="_blank">Jackson Douglas de
-            Souza</a>
-    </footer>
-</body>
-
+        <!--FOOTER-->
+        <footer>
+            <p>Developed by the Student</p>
+            <a
+                class="foo"
+                href="https://www.linkedin.com/in/jacksondouglasdesouza/"
+                target="_blank"
+                >Jackson Douglas de Souza</a
+            >
+        </footer>
+    </body>
 </html>

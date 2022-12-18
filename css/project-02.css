@@ -52,26 +52,25 @@ table {
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,500;1,600&family=Roboto:wght@300;400;500;700&display=swap');
 
-html{
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.98rem;
-  font-weight: regular;
+*, *::before{
+  box-sizing: border-box;
 }
 
 body{
-  max-width: 1400px;
-  margin: 0 auto;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.98rem;
+  font-weight: regular;
+  line-height: 1.4;
 }
 
 main{
-  max-width: 1400px;
   margin: 0 auto;
 }
 
-
 header{
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   text-decoration: none;
   justify-content: center;
@@ -79,7 +78,7 @@ header{
   width: 100%;
   height: 50px;
   margin: 30px auto;
-  gap: 20px;
+  gap: 10px;
 }
 
 .back{
@@ -95,7 +94,6 @@ header{
 cursor: pointer;
 transition: 0.3s;
 }
-
 
 .company-logo{
   margin: 30px auto;
@@ -161,7 +159,7 @@ body{
 }
 
 .form-field input{
-  width: 390px;
+  width: 100%;
   height: 45px;
   background-color: #fcfcfc;
   border: solid 1px #b6b6b6be;
@@ -267,19 +265,16 @@ transition: 0.6s;
 
 
 footer{
+  background-color: #27122d;
   width: 100%;
-  height: 130px;
+  margin-top: 20px;
+  height: 120px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: unset;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 5px;
-  background-color: #27122d;
-  margin: 20px auto;
-  color: #ffffff;
 }
 
 footer p{
@@ -287,6 +282,7 @@ footer p{
   font-size: small;
   line-height: 10px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 footer a{
@@ -294,6 +290,34 @@ footer a{
   font-size: smaller;
   font-weight: 600;
   text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
 }
 
 /* END FOOTER */
+
+@media(min-width: 576px){
+  main{
+    max-width: 540px;
+  }
+
+}
+
+@media(min-width: 768px){
+  main{
+    max-width: 720px;
+  }
+
+}
+
+@media(max-width: 280px)
+{
+  img{
+    display: none;
+  }
+  form{
+    max-width: 250px;
+  }
+}
